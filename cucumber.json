@@ -1,0 +1,292 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 23,
+        "name": "Get many movies by title",
+        "description": "",
+        "id": "imdb-rest-api-gets;get-many-movies-by-title;no-special-characters-in-movie-titles;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 232724082,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "I query movie by \"Finding Nemo\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Finding Nemo",
+                  "offset": 18
+                }
+              ],
+              "location": "omdbSteps.i_query_movie_by(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 548080993,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "I make the rest call",
+            "match": {
+              "location": "omdbSteps.i_make_the_rest_call()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 7260946,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "response should contain \"{\"Genre\": \"Animation, Adventure, Comedy\"}\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "{\"Genre\": \"Animation, Adventure, Comedy\"}",
+                  "offset": 25
+                }
+              ],
+              "location": "omdbSteps.response_should_contain(String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 15,
+            "name": "@wip"
+          }
+        ]
+      },
+      {
+        "line": 24,
+        "name": "Get many movies by title",
+        "description": "",
+        "id": "imdb-rest-api-gets;get-many-movies-by-title;no-special-characters-in-movie-titles;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 185343,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "I query movie by \"Inception\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Inception",
+                  "offset": 18
+                }
+              ],
+              "location": "omdbSteps.i_query_movie_by(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 182841970,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "I make the rest call",
+            "match": {
+              "location": "omdbSteps.i_make_the_rest_call()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 241791,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "response should contain \"{\"Genre\": \"Action, Mystery, Sci-Fi\"}\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "{\"Genre\": \"Action, Mystery, Sci-Fi\"}",
+                  "offset": 25
+                }
+              ],
+              "location": "omdbSteps.response_should_contain(String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 15,
+            "name": "@wip"
+          }
+        ]
+      },
+      {
+        "line": 28,
+        "name": "Get many movies by title",
+        "description": "",
+        "id": "imdb-rest-api-gets;get-many-movies-by-title;special-characters-in-movie-titles;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 273122,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "I query movie by \"WALL·E\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "WALL·E",
+                  "offset": 18
+                }
+              ],
+              "location": "omdbSteps.i_query_movie_by(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 177183502,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "I make the rest call",
+            "match": {
+              "location": "omdbSteps.i_make_the_rest_call()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 330608,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "response should contain \"{\"Genre\": \"Animation, Adventure, Family\"}\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "{\"Genre\": \"Animation, Adventure, Family\"}",
+                  "offset": 25
+                }
+              ],
+              "location": "omdbSteps.response_should_contain(String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 15,
+            "name": "@wip"
+          }
+        ]
+      },
+      {
+        "line": 29,
+        "name": "Get many movies by title",
+        "description": "",
+        "id": "imdb-rest-api-gets;get-many-movies-by-title;special-characters-in-movie-titles;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 217424,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "I query movie by \"8½\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "8½",
+                  "offset": 18
+                }
+              ],
+              "location": "omdbSteps.i_query_movie_by(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 155207687,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "I make the rest call",
+            "match": {
+              "location": "omdbSteps.i_make_the_rest_call()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 267177,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "response should contain \"{\"Genre\": \"Drama\" }\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "{\"Genre\": \"Drama\" }",
+                  "offset": 25
+                }
+              ],
+              "location": "omdbSteps.response_should_contain(String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 15,
+            "name": "@wip"
+          }
+        ]
+      }
+    ],
+    "name": "IMDB rest api gets",
+    "description": "",
+    "id": "imdb-rest-api-gets",
+    "keyword": "Feature",
+    "uri": "doshi/cucumber/test/omdb_api.feature"
+  }
+]
